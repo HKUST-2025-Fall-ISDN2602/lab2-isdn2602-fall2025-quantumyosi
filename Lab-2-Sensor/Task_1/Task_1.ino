@@ -9,7 +9,7 @@
 
 /*Define the varibles required*/
 long duration;
-float distance;
+float distance = (duration * SOUND_SPEED)/2;
 
 void setup() {
   Serial.begin(115200); // Starts the serial communication
