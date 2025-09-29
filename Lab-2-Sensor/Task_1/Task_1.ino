@@ -32,11 +32,11 @@ void loop() {
   duration = pulseIn(echoPin, HIGH);
   
   // Calculate the distance (in m)
-  distance = (duration * SOUND_SPEED/100)/2;
+  distance = (((float)duration/1000000) * SOUND_SPEED)/2;
   
   // Prints the distance in the Serial Monitor
-  Serial.print("Distance (cm): ");
-  Serial.println(distance/100);
+  Serial.print("Distance (m): ");
+  Serial.println(distance);
 
   delay(1000); //Change the delay if you want
 }
