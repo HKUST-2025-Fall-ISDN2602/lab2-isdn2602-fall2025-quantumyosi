@@ -31,7 +31,7 @@ bool Filter = true;           //True:  Enable
                               //False: Disale
 
 /*Enable Serial Plot*/
-bool SerialPlotGrapgh = false; //True:  Enable
+bool SerialPlotGrapgh = true; //True:  Enable
                               //False: Disale
 
 /*------------ DO NOT Change the code BELOW ------------*/
