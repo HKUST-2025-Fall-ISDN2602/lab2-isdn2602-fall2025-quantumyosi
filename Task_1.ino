@@ -9,7 +9,7 @@
 
 /*Define the varibles required*/
 long duration;
-float distance = (duration * SOUND_SPEED)/2;
+float distance;
 
 void setup() {
   Serial.begin(115200); // Starts the serial communication
@@ -32,7 +32,7 @@ void loop() {
   duration = pulseIn(echoPin, HIGH);
   
   // Calculate the distance (in m)
-  distance = (duration * SOUND_SPEED/100)/2;
+  distance = (duration * SOUND_SPEED)/2;
   
   // Prints the distance in the Serial Monitor
   Serial.print("Distance (cm): ");
